@@ -1,0 +1,17 @@
+good微服务:18081
+file微服务:18082
+canal微服务：18083
+content微服务:18084
+search微服务:18085
+web-item微服务:18086
+web-item微服务:18087
+user微服务:18088
+order微服务:18089
+pay微服务:18090
+seckill微服务:18091
+
+
+
+eureka注册中心:7001
+gateway-web网关中心:8001
+user-oauth用户认证中心:9001

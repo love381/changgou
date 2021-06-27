@@ -1,0 +1,29 @@
+server:
+  port: 18087
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:7001/eureka
+  instance:
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: item
+  main:
+    allow-bean-definition-overriding: true
+ribbon:
+  ReadTimeout: 300000
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+#生成静态页位置
+pagepath: E:/gitRepos/changgou/changgou-parent/changgou-web/changgou-web-item/src/main/resources/templates/items
